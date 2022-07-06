@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Javascript Quiz</title>
+  </head>
+  <body>
     <!-- 
         Title element
+        Start button element
         Question element
         Score element
         Timer element
@@ -19,7 +21,26 @@
             Input for initials
         Highscore element
         Restart button element
-
      -->
-</body>
+    <header>
+      <h1 class="header">Javascript Test</h1>
+    </header>
+
+    <main class="container">
+      <input type="button" id="start-button" value="Start"></input>
+      <div id="quiz-question"></div>
+      <div id="timer">
+        <div id="timer-countdown"></div>
+      </div>
+      <div id="score"></div>
+      <div id="quiz-answers">
+        <input type="button" id="Answer 1"></input>
+        <input type="button" id="Answer 2"></input>
+        <input type="button" id="Answer 3"></input>
+        <input type="button" id="Answer 4"></input>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
